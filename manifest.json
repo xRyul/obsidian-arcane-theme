@@ -1,7 +1,7 @@
 {
-    "name": "Arcane",
-    "version": "0.0.1",
-    "minAppVersion": "0.16.0",
-    "author": "xRyul",
-    "authorUrl": "https://github.com/xRyul",
+   "name": "xRyul",
+   "version": "0.0.1",
+   "minAppVersion": "1.1.8",
+   "author": "xRyul",
+   "authorUrl": "https://github.com/xRyul"
 }
