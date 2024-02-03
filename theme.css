@@ -432,7 +432,6 @@ table>tbody {
 /* Color Of Folders */
 .nav-folder-title {
     color: var(--gray-3);
-    ;
 }
 
 .multi-select-pill,
@@ -571,8 +570,22 @@ table>tbody {
     background: var(--graph-node-resolved);
 }
 
+/* Properties */
 div.metadata-property-key > input {
     background:inherit;
+}
+
+.metadata-property:not([data-property-key="tags"]) .multi-select-pill {
+    line-height: var(--line-height-normal);
+}
+
+.multi-select-pill {
+    border-radius: var(--radius-l);
+    padding: 0 10px 0 10px;
+}
+.multi-select-pill:hover {
+    background-color: hsla(254, 80%, 80%, 0.1);
+    color: var(--text-accent);
 }
 
 /* Search Input Colors */
@@ -1040,7 +1053,7 @@ body {
     --modal-community-sidebar-width: 280px;
     /* Multi-select pills */
     --pill-color: var(--text-muted);
-    --pill-color-hover: var(--text-normal);
+    --pill-color-hover: var(--text-accent-hover);
     --pill-color-remove: var(--text-faint);
     --pill-color-remove-hover: var(--text-accent);
     --pill-decoration: none;
