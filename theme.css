@@ -571,6 +571,10 @@ table>tbody {
     background: var(--graph-node-resolved);
 }
 
+div.metadata-property-key > input {
+    background:inherit;
+}
+
 /* Search Input Colors */
 textarea,
 input[type='text'],
@@ -604,14 +608,11 @@ input[type='number']:focus {
     border: 1px solid var(--h5-color);
 }
 
-
 textarea:focus,
 input[type='text']:focus {
     border-top-left-radius: var(--radius-l);
     border-top-right-radius: var(--radius-l);
 }
-
-
 
 input.document-search-input,
 input.document-replace-input {
