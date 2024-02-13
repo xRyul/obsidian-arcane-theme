@@ -400,8 +400,27 @@ table>tbody {
 } */
 
 /* Make full table visible in Live Preview */
-.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
-    contain: none !important;
+/* .markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+    contain: none;
+} */
+
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent) {
+    width: fit-content;
+}
+
+
+
+@media (hover: hover) {
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):hover {
+        box-shadow: var(--embed-block-shadow-hover);
+        border-radius: var(--radius-s);
+        overflow: auto;
+        width: fit-content;
+    }
+
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):hover .edit-block-button:hover {
+        background-color: var(--background-modifier-hover);
+    }
 }
 
 /*────────────────────────────────────
@@ -576,8 +595,8 @@ table>tbody {
 }
 
 /* Properties */
-div.metadata-property-key > input {
-    background:inherit;
+div.metadata-property-key>input {
+    background: inherit;
 }
 
 .metadata-property:not([data-property-key="tags"]) .multi-select-pill {
@@ -588,6 +607,7 @@ div.metadata-property-key > input {
     border-radius: var(--radius-l);
     padding: 0 10px 0 10px;
 }
+
 .multi-select-pill:hover {
     background-color: hsla(254, 80%, 80%, 0.1);
     color: var(--text-accent);
@@ -1297,7 +1317,7 @@ body {
     --pink-2: hsl(317, 62%, 65%);
     --pink-3: hsl(334, 64%, 66%);
     --pink-3-transparent: hsla(334, 64%, 66%, 0.9);
-    
+
 
     /* Shades of Dark and Important */
     --dark-1: rgba(0, 0, 0, 0.05);
