@@ -404,21 +404,21 @@ table>tbody {
     contain: none;
 } */
 
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent) {
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered) {
     width: fit-content;
 }
 
 
 
 @media (hover: hover) {
-    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):hover {
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered):hover {
         box-shadow: var(--embed-block-shadow-hover);
         border-radius: var(--radius-s);
         overflow: auto;
         width: fit-content;
     }
 
-    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):hover .edit-block-button:hover {
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered):hover .edit-block-button:hover {
         background-color: var(--background-modifier-hover);
     }
 }
