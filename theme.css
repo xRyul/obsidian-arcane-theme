@@ -404,21 +404,22 @@ table>tbody {
     contain: none;
 } */
 
-.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered) {
+.markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col) {
     width: fit-content;
 }
 
-
+/* Following is specific for multi column plugin which uses col-md syntax */
+.cm-preview-code-block.cm-embed-block.markdown-rendered .block-language-col {
+    width: var(--file-line-width);
+}
 
 @media (hover: hover) {
-    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered):hover {
-        box-shadow: var(--embed-block-shadow-hover);
-        border-radius: var(--radius-s);
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col):hover {
         overflow: auto;
         width: fit-content;
     }
 
-    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent.admonition-abstract-parent):not(.cm-preview-code-block.cm-embed-block.markdown-rendered):hover .edit-block-button:hover {
+    .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col):hover .edit-block-button:hover {
         background-color: var(--background-modifier-hover);
     }
 }
