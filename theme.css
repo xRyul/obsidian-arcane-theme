@@ -390,6 +390,11 @@ pre[class*="language-"] {
     opacity: 0.7;
 }
 
+/* Allow images to be scaled outside MAX line width */
+.internal-embed.media-embed.image-embed.is-loaded {
+    width: fit-content;
+}
+
 /* Testin TablesWidths */
 /* table>thead>tr>th:nth-child(1),
 table>thead>tr>th:nth-child(2),
@@ -404,6 +409,7 @@ table>tbody {
     contain: none;
 } */
 
+/* Tables */
 .markdown-source-view.mod-cm6 .cm-embed-block:not(.cm-table-widget):not(.cm-preview-code-block.cm-embed-block.markdown-rendered.admonition-parent):not(.cm-embed-block.cm-callout):not(.block-language-col) {
     width: fit-content;
 }
