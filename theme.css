@@ -391,9 +391,9 @@ pre[class*="language-"] {
 }
 
 /* Allow images to be scaled outside MAX line width */
-.internal-embed.media-embed.image-embed.is-loaded {
+/* .internal-embed.media-embed.image-embed.is-loaded {
     width: fit-content;
-}
+} */
 
 /* Testin TablesWidths */
 /* table>thead>tr>th:nth-child(1),
